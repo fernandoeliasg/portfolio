@@ -1,24 +1,26 @@
 .container {
-  width: 90%;
+  width: 70%;
   max-width: 800px;
   margin: 20px auto;
-  display: grid;
+  font-family: 'Archivo', open-sans;
   grid-gap: 20px;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  font-family: 'Archivo', open-sans;
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: 
+    "contenido contenido contenido"
+    "links links links" 
+    "footer footer footer";
 }
 
 .container .contenido {
-  grid-column: span 3;
   text-align: center;
+  grid-area: contenido;
 }
 
 .container .links {
+  grid-area: links;
   margin: auto;
   display: block;
-  grid-column-start: 2;
-  grid-column-end: 3;
   padding: 20px;
 
 }
@@ -42,6 +44,17 @@
 }
 
 .container .footer {
+  grid-area: footer;
   margin: auto;
-  grid-column: span 3;
+}
+
+@media screen and (max-width: 768px){
+  .container {
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, auto);
+  grid-template-areas: 
+    "contenido"
+    "links" 
+    "footer";
+    }
 }
