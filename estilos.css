@@ -1,0 +1,47 @@
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  font-family: 'Archivo', open-sans;
+}
+
+.container .contenido {
+  grid-column: span 3;
+  text-align: center;
+}
+
+.container .links {
+  margin: auto;
+  display: block;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  padding: 20px;
+
+}
+
+.container .links a{
+  border-radius: 2px;
+  align-text: center;
+  background: #000;
+}
+#linkedin {
+  border: 5px;
+  margin: 10px;
+  padding: 20px;
+  width: 200px;
+}
+#behance {
+  border: 5px;
+  margin: 10px;
+  padding: 20px;
+  width: 200px;
+}
+
+.container .footer {
+  margin: auto;
+  grid-column: span 3;
+}
