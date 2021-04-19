@@ -1,10 +1,9 @@
 .container {
   width: 100%;
-  max-width: 800px;
-  margin: 20px auto;
+  margin: 16px auto;
   font-family: 'Archivo', open-sans;
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 16px;
   justify-content: center;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(1, auto);
@@ -22,24 +21,29 @@
 .container .links {
   grid-area: links;
   text-align: center;
-  padding: 20px;
+  padding: 16px;
   text-color: #fff;
 }
 
-.container .links a{
-  border-radius: 2px;
+.container .links a {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  border-radius: 4px;
   color: #fff;
   background: #000;
 }
 #linkedin {
   border: 5px;
-  margin: 10px;
+  margin-bottom: 16px;
+  border-radius: 4px;
   padding: 20px;
   width: 200px;
 }
 #behance {
+  border-radius: 4px;
+  margin-bottom: 16px;
   border: 5px;
-  margin: 10px;
   padding: 20px;
   width: 200px;
 }
