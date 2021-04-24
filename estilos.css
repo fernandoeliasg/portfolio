@@ -1,68 +1,89 @@
+:root {
+  --main-radius: 5px;
+  --main
+}
+
 .container {
-  width: 100%;
-  margin: 16px auto;
+  width: 360px;
+  margin: auto;
   font-family: 'Archivo', open-sans;
+  height: 100vh;
   display: grid;
-  grid-gap: 16px;
-  justify-content: center;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(1, auto);
-  grid-template-areas: 
-    "contenido"
-    "links" 
-    "footer";
+  grid-gap: 10px;
+  grid-template-columns: 60px 60px 60px 60px;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+        "presentacion presentacion presentacion presentacion"
+        "links links links links"
+        "footer footer footer footer"
 }
 
-.container .contenido {
+img {
+  margin: auto;
+  border-radius: 100%;
+  border-style: solid;
+  width: 150px;
+}
+
+.h1 {
   text-align: center;
-  grid-area: contenido;
+  font-weight: 900;
 }
 
-.container .links {
+.container #presentacion {
+  margin: auto;
+  text-align: center;
+  grid-area: presentacion;
+}
+
+
+
+.container #links {
   grid-area: links;
   text-align: center;
   padding: 16px;
   text-color: #fff;
 }
 
-.container .links a {
+.container #links a {
   margin: auto;
-  display: flex;
+  display: block;
   justify-content: center;
   border-radius: 4px;
   color: #fff;
   background: #000;
 }
+
 #linkedin {
   border: 5px;
   margin-bottom: 16px;
   border-radius: 4px;
   padding: 20px;
-  width: 200px;
+  width: 100%;
 }
+
 #behance {
   border-radius: 4px;
   margin-bottom: 16px;
   border: 5px;
   padding: 20px;
-  width: 200px;
+  width: 100%;
 }
 
-.container .footer {
-  margin: auto;
+.container #footer {
   grid-area: footer;
+  text-align: center;
 }
 
-@media screen and (max-width: 360px){
+@media only screen and (max-width: 559px) {
   .container {
-  width: 90%;
-  margin: auto;
-  grid-gap: 16px;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(1, auto);
-  grid-template-areas: 
-    "contenido"
-    "links" 
-    "footer";
-    }
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+      "presentacion"
+      "links"
+      "footer"
+  }
 }
+
