@@ -1,6 +1,9 @@
 :root {
   --main-radius: 5px;
-  --main
+}
+
+html {
+  margin:auto;
 }
 
 .container {
@@ -15,14 +18,15 @@
   grid-template-areas:
         "presentacion presentacion presentacion presentacion"
         "links links links links"
-        "footer footer footer footer"
+        ". footer footer ."
 }
 
 img {
   margin: auto;
   border-radius: 100%;
-  border-style: solid;
-  width: 150px;
+  border: 2px solid;
+  width: 100px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .h1 {
@@ -30,7 +34,7 @@ img {
   font-weight: 900;
 }
 
-.container #presentacion {
+#presentacion {
   margin: auto;
   text-align: center;
   grid-area: presentacion;
@@ -38,52 +42,35 @@ img {
 
 
 
-.container #links {
+#links {
   grid-area: links;
   text-align: center;
-  padding: 16px;
+  padding: 10px;
   text-color: #fff;
 }
 
-.container #links a {
-  margin: auto;
-  display: block;
-  justify-content: center;
+#links a {
+  padding: 20px;
   border-radius: 4px;
   color: #fff;
   background: #000;
 }
 
 #linkedin {
-  border: 5px;
-  margin-bottom: 16px;
+  width: 130px;
+  margin-top:10px;
   border-radius: 4px;
-  padding: 20px;
-  width: 100%;
 }
 
 #behance {
+  margin-top: 10px;
   border-radius: 4px;
-  margin-bottom: 16px;
-  border: 5px;
-  padding: 20px;
-  width: 100%;
+  width: 130px;
 }
 
-.container #footer {
+#footer {
   grid-area: footer;
   text-align: center;
 }
 
-@media only screen and (max-width: 559px) {
-  .container {
-    width: 100%;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-      "presentacion"
-      "links"
-      "footer"
-  }
-}
 
