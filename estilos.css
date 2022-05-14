@@ -1,17 +1,18 @@
+
+
 .wrapper {
 background: #FFFFFF;
-width: 100%;
+width: 360px;
 padding: 16px;
 display: grid;
-grid-template-columns: repeat(3);
+grid-template-columns: 259px auto 24px;
+grid-template-rows: 168px auto;
 grid-gap: 8px;
-  grid-auto-columns: auto;
 }
 
 .nombre {
-  grid-column: 1 / 3;
+  grid-column: 1 / 1;
   grid-row: 1;
-width: 259px;
 height: 120px;
 left: 16px;
 top: 33px;
@@ -28,34 +29,19 @@ color: #090909;
 .aka {
 grid-column: 3 / 3;
 grid-row: 1;
+padding-right: 96px;
 font-family: 'Archivo';
 font-style: normal;
 font-weight: 700;
 font-size: 24px;
-line-height: 100%;
-/* identical to box height, or 24px */
 letter-spacing: 0.02em;
-color: #000000;
+color: #090909;
 transform: rotate(-90deg);
 }
 
 .separador1{
 padding-top: 16px;
-grid-column: 1 / 2;
-grid-row: 2;
-height: 32px;
-font-family: 'Archivo';
-font-style: normal;
-font-weight: 300;
-font-size: 20px;
-/* identical to box height, or 0px */
-letter-spacing: 0.065em;
-color: #000000;
-
-}
-.separador2{
-padding-top: 16px;
-grid-column: 3 / 3;
+grid-column: 1 / 1;
 grid-row: 2;
 height: 32px;
 font-family: 'Archivo';
@@ -83,11 +69,11 @@ color: #E6E6E6;
 .behance {
 grid-column: 1 / 3;
 grid-row: 3;
-  padding-top: 16px;
-width: 100%;
+padding-top: 16px;
+width: 360px;
 height: 56px;
 background: #090909;
-border-top: 1px solid #E6E6E6;
+
 }
 
 .disenos {
@@ -97,7 +83,6 @@ grid-row: 4;
 width: 100%;
 height: 56px;
 background: #090909;
-border-top: 1px solid #E6E6E6;
 }
 
 .linkedin {
@@ -107,7 +92,6 @@ grid-row: 5;
 width: 100%;
 height: 56px;
 background: #090909;
-border-top: 1px solid #E6E6E6;
 }
 
 .twitter {
@@ -117,15 +101,13 @@ grid-row: 6;
 width: 100%;
 height: 56px;
 background: #090909;
-border-top: 1px solid #E6E6E6;
 }
 
 .tiktok {
 grid-column: 1 / 3;
 grid-row: 7;
 padding-top: 16px;
-width: 100%;
+width: 360px;
 height: 56px;
 background: #090909;
-border-top: 1px solid #E6E6E6;
 }
